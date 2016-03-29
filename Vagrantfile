@@ -33,12 +33,12 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision "shell", inline: <<-SHELL
-    sudo yum remove -y chef puppet
     sudo yum -y upgrade
-    sudo yum clean all
+    sudo yum install -y vim tmux git python-devel python-pip git-core virt-what gcc-c++ m2crypto
     sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-    sudo install -y python-pip
-    sudo yum install -y vim tmux git python-dev python-pip git-core virt-what 
-    sudo pip install pyzmq PyYAML pycrypto msgpack-python jinja2 psutil M2Crypto
+    sudo yum install -y python-pip
+    sudo yum clean all
+    sudo pip install --upgrade pip
+    sudo pip install pyzmq PyYAML pycrypto msgpack-python jinja2 psutil 
   SHELL
 end
