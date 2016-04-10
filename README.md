@@ -3,7 +3,7 @@ Salt Development Environment in Vagrant
 
 Personal Vagrantfile for SaltStack Development in CentOS 6.
 
-**NOTE**: Deprecated since Python 2.6 is not logenr supported. Please see [saltdev-centos](https://github.com/abednarik/saltdev-centos)
+**NOTE**: Deprecated since Python 2.6 is not longer supported. Please see [saltdev-centos](https://github.com/abednarik/saltdev-centos)
 
 Instructions
 ------------
